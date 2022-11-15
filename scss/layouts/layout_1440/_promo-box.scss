@@ -1,0 +1,105 @@
+.promo-box {
+  // max-width: 1440px;
+  margin: 0 auto;
+  &__item-1 {
+    background: url(../../../i/bg_1.jpg) no-repeat;
+
+    background-size: 100% 100%;
+    max-width: 680px;
+    margin: 0;
+    height: 660px;
+  }
+  &__item-2 {
+    background: url(../../..//i/bg_2.jpg) no-repeat;
+    background-size: 100% 100%;
+    max-width: 680px;
+    margin: 0;
+    height: 660px;
+  }
+
+  &__first-line {
+    display: flex;
+    // margin: 30px 30px 0 30px;
+    justify-content: center;
+  }
+}
+.promo-post {
+  margin: 0 auto;
+  // margin-right: 20px;
+  text-align: center;
+  &:last-child {
+    margin-right: 0;
+  }
+  &__item-3 {
+    background-color: #f7f8fa;
+    display: flex;
+    align-items: center;
+    padding: 86px 176px 86px 140px;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 342px;
+    height: auto;
+  }
+  &__content {
+    margin-left: 80px;
+  }
+  &__title {
+    font-size: $h1FontSize;
+    font-weight: $semiboldFontWeight;
+    color: #222;
+    padding: 0 0 16px 0;
+    text-align: left;
+    line-height: 72px;
+    &_center {
+      text-align: center;
+      padding-top: 120px;
+    }
+    &_light {
+      color: $white;
+    }
+  }
+  &__subtitle {
+    color: rgba(34, 34, 34, 0.5);
+    font-family: $font-family;
+    font-weight: $lightFontWeight;
+    font-size: $bigFontSize;
+    line-height: 44px;
+    padding-bottom: 30px;
+    text-align: left;
+    &_center {
+      text-align: center;
+      padding: 0 68px;
+    }
+    &_dark {
+      color: #222;
+    }
+    &_gray {
+      color: #888;
+    }
+    &_light {
+      color: $white;
+    }
+  }
+}
+
+.post-info {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  //   grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  padding-top: 0;
+  &__title {
+    color: #222;
+    font-size: $h2FontSize;
+    font-weight: $semiboldFontWeight;
+    line-height: 54px;
+  }
+  &__subtitle {
+    color: rgba(34, 34, 34, 0.75);
+    font-size: $mediumFontSize;
+    font-weight: $lightFontWeight;
+    line-height: 30px;
+  }
+}

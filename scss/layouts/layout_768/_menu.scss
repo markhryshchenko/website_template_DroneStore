@@ -1,0 +1,33 @@
+.nav-menu {
+  height: 35px;
+  padding: 60px 0;
+
+  &_container {
+    max-width: 1072px;
+  }
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+
+  &__item {
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      color: $activeLink;
+    }
+  }
+}

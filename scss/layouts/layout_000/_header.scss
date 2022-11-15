@@ -1,0 +1,22 @@
+.content-box {
+  padding: 50px 32px 0 32px;
+  background-color: $black;
+  text-align: center;
+  &__title {
+    padding-top: 50px;
+    color: $white;
+    font-size: $h2FontSize;
+    font-weight: $mediumFontWeight;
+  }
+  &__subtitle {
+    color: #e5e5e5;
+    font-size: $smallFontSize;
+    font-weight: $lightFontWeight;
+    padding-bottom: 27px;
+  }
+  &__logotitle {
+    height: auto;
+    max-height: 410px;
+    max-width: 100%;
+  }
+}
