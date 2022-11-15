@@ -1,0 +1,28 @@
+.header-box {
+  background-color: $black;
+  // display: flex;
+  //   justify-content: center;
+  // flex-direction: column;
+}
+
+.content-box {
+  padding: 0 32px;
+  &__title {
+    padding-top: 50px;
+    color: $white;
+    font-size: $h2FontSize;
+    font-weight: $mediumFontWeight;
+  }
+  &__subtitle {
+    color: #969696;
+    font-size: $smallFontSize;
+    font-weight: $lightFontWeight;
+    padding-bottom: 16px;
+    line-height: 27px;
+  }
+  &__logotitle {
+    height: auto;
+    // max-height: 410px;
+    max-width: 100%;
+  }
+}

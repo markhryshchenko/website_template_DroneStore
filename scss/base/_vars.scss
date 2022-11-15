@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+$font-family: "Poppins", sans-serif;
+
+$lightFontWeight: 300;
+$mediumFontWeight: 500;
+$semiboldFontWeight: 600;
+$baseFontSize: 16px;
+$smallFontSize: 18px;
+$mediumFontSize: 20px;
+$bigFontSize: 24px;
+$exbigFontSize: 28px;
+$h2FontSize: 36px;
+$h1FontSize: 48px;
+
+$maxWidthContainer: 1440px;
+
+$white: #fff;
+$black: #000;
+$activeLink: #1abc9c;
+$headerSubtitle: #969696;
+
+$imagePath: "../i/";
+
+$bpMap: (
+  "sm": "320",
+  "md": "768",
+  "lg": "1440",
+);

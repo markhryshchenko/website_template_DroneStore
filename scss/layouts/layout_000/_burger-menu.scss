@@ -1,0 +1,121 @@
+.header-box {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  padding: 0;
+}
+.header-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 2;
+}
+
+.header__body {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 25px 30px 0 30px;
+}
+.header__logo {
+  position: relative;
+  z-index: 3;
+}
+.header__burger {
+  display: none;
+}
+.header__list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.header__list li {
+  list-style: none;
+}
+.header__link {
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: $smallFontSize;
+  margin-left: 20px;
+  &:last-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    z-index: 3;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 11px;
+    transition: all 0.3s easy 0s;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s easy 0s;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 11px;
+  }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 11px;
+  }
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    padding-top: 70px;
+  }
+  .header__menu.active {
+    top: 0;
+    transition: all 0.3s easy 0s;
+  }
+  .header__list {
+    display: block;
+  }
+  .header__list li {
+    margin-bottom: 20px;
+  }
+}

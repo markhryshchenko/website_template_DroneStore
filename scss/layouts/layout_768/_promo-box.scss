@@ -1,0 +1,73 @@
+.promo-box {
+  &__first-line {
+    margin: 0 auto;
+    display: flex;
+  }
+}
+.promo-post {
+  min-height: 460px;
+  // max-height: 660px;
+  margin: 20px;
+  text-align: center;
+  // &__item-3 {
+  // }
+  &__logo {
+    min-height: 236px;
+    min-width: 227px;
+
+    &img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  &__logo-3 {
+    // width: 100%;
+    max-width: 342px;
+    height: auto;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: $h2FontSize;
+    font-weight: $semiboldFontWeight;
+    color: $black;
+    padding: 36px 0 18px 0;
+    &_light {
+      color: $white;
+    }
+  }
+  &__subtitle {
+    color: rgba(34, 34, 34, 0.5);
+    font-family: $font-family;
+    font-weight: $lightFontWeight;
+    font-size: $bigFontSize;
+    line-height: 44px;
+    &_dark {
+      color: #222;
+    }
+    &_gray {
+      color: #888;
+    }
+    &_light {
+      color: $white;
+    }
+  }
+}
+
+.post-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  //   grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  padding-top: 65px;
+  &__title {
+    color: #222;
+    font-size: $h2FontSize;
+    font-weight: $semiboldFontWeight;
+    line-height: 54px;
+  }
+  &__subtitle {
+    color: rgba(34, 34, 34, 0.75);
+    font-size: $mediumFontSize;
+    font-weight: $lightFontWeight;
+    line-height: 30px;
+  }
+}

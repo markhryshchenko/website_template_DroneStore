@@ -1,0 +1,42 @@
+.head-box {
+  text-align: center;
+  &__title {
+    font-family: $font-family;
+    font-size: $h2FontSize;
+    font-weight: $semiboldFontWeight;
+    color: #222;
+    padding: 102px 0 16px;
+  }
+  &__subtitle {
+    font-weight: $lightFontWeight;
+    font-size: $smallFontSize;
+    color: #818181;
+    line-height: 32px;
+    padding: 0 50px 36px 50px;
+  }
+}
+
+.slider-card {
+  padding: 0 40px;
+  margin-bottom: 50px;
+  &__picture {
+    width: 100%;
+    max-width: 410px;
+    height: auto;
+    // min-height: 194px;
+    // min-width: 330px;
+  }
+  &__title {
+    font-size: $h2FontSize;
+    font-weight: $semiboldFontWeight;
+    color: #222;
+    line-height: 54px;
+  }
+  &__content {
+    font-size: $mediumFontSize;
+    font-weight: $lightFontWeight;
+    color: #222;
+    line-height: 36px;
+    padding-bottom: 30px;
+  }
+}
